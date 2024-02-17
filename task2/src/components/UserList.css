@@ -1,0 +1,141 @@
+/* Style for the container */
+.user-list-container {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  border-radius: 2%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  height: 100vh;
+}
+
+/* Style for the user card */
+.user-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px; 
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  max-height: 150px;
+  width: 100%; 
+}
+
+/* Hover effect for the user card */
+.user-card:hover {
+  transform: translateY(-5px); 
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Style for the search input */
+.search-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.no-users-container{
+  text-align: center;
+  width:100%;
+  margin-top: 20px;
+  color: #888;
+}
+
+
+/* Style for the user card body */
+.user-card-body {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+/* Style for the user image */
+.user-images img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.rounded-img {
+  width: 100px;
+  height: 100px;
+  border: 2px solid grey;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.rounded-img img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style for the user name */
+.user-name {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Style for the job post */
+.job_post {
+  margin: 0;
+  font-style: italic;
+  color: #888;
+}
+
+.user-list-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.user-list-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.user-list-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 15px;
+}
+
+.pagination button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+/* Style for disabled pagination buttons */
+.pagination button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

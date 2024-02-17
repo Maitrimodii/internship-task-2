@@ -1,0 +1,47 @@
+.user-details-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    border-radius: 2%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+  }
+  
+  .user-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .user-info {
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+  }
+  
+  .table-row {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-gap: 10px;
+    width: 100%;
+  }
+  
+  .title {
+    font-weight: bold;
+    grid: 1;
+    width:100px;
+    text-align:left;
+  }
+  .value {
+    text-align: left;
+    grid: 2;
+    width: auto;
+  }
+  
+  
